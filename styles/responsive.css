@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1000px) {
+    .banner .content p{
+        font-size: 1.8em;
+    }
+    .box span{
+        width: 80px;
+        height: 80px;
+    }
+    .hexagon-wrap{
+        flex: 50%;
+    }
+    .hexagon{
+        width: 250px;
+        height: 150px;
+    }
+    .hexagon-title{
+        margin-bottom: 40px;
+        font-size: 1.5em;
+    }
+    .fa-laptop-code, .fa-tablet-alt, .fa-database, .fa-people-carry{
+        font-size: 3em;
+    }
+} 
