@@ -41,17 +41,6 @@ a{
     height: 100%;
     overflow: hidden;
 }
-.header-overlay{
-    height:100vh;
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:1;
-    background:#225470;
-    opacity:0.25;
-    overflow: hidden;
-  }
 .banner .content{
     position: relative;
     z-index: 1;
@@ -59,6 +48,9 @@ a{
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
+}
+.content{
+    animation: drop 1.5s ease;
 }
 .banner .content h1{
     margin: 0;
@@ -141,7 +133,7 @@ a{
 .link-wrap{
     background-color: #1B1B1B;
     height: 100%;
-    padding-top: 1px;
+    padding-top: 20px;
     border-bottom: 3px solid #225470;
 }
 .nav-menu{   
@@ -166,11 +158,39 @@ a{
 }
 .menu ul li a{
     color: #F5F5F5;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color: #225470;
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+}
+@-webkit-keyframes drop{
+    0% {
+        opacity: 0;
+        -webkit-transform:  translateY(-80px);
+                transform:  translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform:  translateY(0px);
+                transform:  translateY(0px);
+    }
+}
+@keyframes drop{
+    0% {
+        opacity: 0;
+        -webkit-transform:  translateY(-80px);
+                transform:  translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform:  translateY(0px);
+                transform:  translateY(0px);
+    }
 }
 /* ================================= Passion Section ========================================*/
 .passion{
@@ -282,6 +302,7 @@ a{
 .right-skills{
     width: 33%;
     float: left;
+    margin-left: 15px;
 }
 .hex-wrap{
     display: -webkit-box;
@@ -384,7 +405,7 @@ ul li{
 }
 a.link-btn{
     display: inline-block;
-    padding:0.3em 1.2em;
+    padding:0.3em 1.5em;
     border: 0.16em solid rgba(255,255,255,0);
     border-radius: 2em;
     -webkit-box-sizing: border-box;
@@ -395,13 +416,36 @@ a.link-btn{
     background-color: #4296c6;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align: center;
-    font-size: .9em;
+    font-size: .75em;
     -webkit-transition-timing-function: ease-in;
             -o-transition-timing-function: ease-in;
        transition-timing-function: ease-in;
+    margin-top: 10px;
 }
 a.link-btn:hover{
     border-color: rgba(	34, 84, 112,1);
+}
+a.resume-btn{
+    display: inline-block;
+    padding:0.3em 1.5em;
+    border: 0.16em solid rgba(255,255,255,0);
+    border-radius: 2em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #fff;
+    background-color: #4296c6;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align: center;
+    font-size: .75em;
+    -webkit-transition-timing-function: ease-in;
+            -o-transition-timing-function: ease-in;
+       transition-timing-function: ease-in;
+    margin-top: 10px;
+}
+a.resume-btn:hover{
+    border-color: rgb(255, 255, 255);
 }
 hr{
     border: 1px solid #225470;
@@ -452,6 +496,11 @@ hr{
     background-color: #FFF5EE;
     width: 90%;
     margin: 0 auto;
+}
+
+.contact-link:hover{
+    text-decoration: none;
+    color: #4296c6;
 }
 .contact h1{
     text-align: center;

@@ -1,23 +1,71 @@
 @media only screen and (max-width: 1000px) {
     .banner .content p{
-        font-size: 1.8em;
+        font-size: 1em;
+    }
+    .banner .content h1{
+        font-size: 1.5em;
     }
     .box span{
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        margin-top: -15px;
     }
     .hexagon-wrap{
-        flex: 50%;
+        -webkit-box-flex: 50%;
+            -ms-flex: 50%;
+                flex: 50%;
     }
     .hexagon{
-        width: 250px;
-        height: 150px;
+        width: 180px;
+        height: 90px;
     }
     .hexagon-title{
         margin-bottom: 40px;
-        font-size: 1.5em;
+        font-size: .95em;
     }
     .fa-laptop-code, .fa-tablet-alt, .fa-database, .fa-people-carry{
-        font-size: 3em;
+        font-size: 1.75em;
+    }
+    .about-content{
+        width: 100%;
+    }
+    .about-me-overlay{
+        padding: 0px;
+    }
+    .menu ul li{
+        padding: 0 7.5px;
+    }
+    .menu ul li a{
+        font-size: .80em;
+    }
+    .contact-input{
+        width: 100%;
+    }
+    
+    .footer-name, .footer-lastname, .copyright{
+        font-size: .75em;
+    }
+    .resume-text{
+        font-size: 1em !important;
+    }
+    .hex-wrap span{
+        font-size: 1em;
+    }
+    a.link-btn{
+        padding: .3em 40%;
+        font-size: .76em;
+        margin-top: 10px;
+    }
+    .conn{
+        position: absolute;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .submit{
+        margin-top: 3em;
+    }
+    .footer{
+        margin-top: 20px;
     }
 } 

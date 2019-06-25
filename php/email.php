@@ -7,10 +7,8 @@ if(isset ($_POST['email'])){
     $subject = 'Portfolio Contact';
     $body = '<html>
                 <body>
-                    <p>Hello Kenneth,</p>
+                    '.$name.'
                     <p>' .$message. '</p>
-                    <p> Best Regards,<br/>'
-                    .$name. '</p>
                 </body>
              </html>';
     $header = "From: ".$name. "<" .$email. ">" . "\r\n";
